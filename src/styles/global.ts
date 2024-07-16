@@ -1,20 +1,20 @@
-import { globalCss } from ".";
+import { globalCss } from '.'
 
 export const globalStyles = globalCss({
-    '*': {
-        margin: 0,
-        padding: 0,
-    },
+  '*': {
+    margin: 0,
+    padding: 0,
+  },
 
-    body: {
-        backgroundColor: '$gray900',
-        color: '$gray100',
-        '-webkit-font-smoothing': 'antialiased',
-    },
+  body: {
+    backgroundColor: '$gray900',
+    color: '$gray100',
+    '-webkit-font-smoothing': 'antialiased',
+  },
 
-    'body, input, button, textarea': {
-        fontFamily: 'Roboto, sans-serif',
-        fontSize: '16px',
-        fontWeight: 400
-    }
+  'body, input, button, textarea': {
+    fontFamily: 'Roboto, sans-serif',
+    fontSize: '16px',
+    fontWeight: 400,
+  },
 })
