@@ -1,7 +1,17 @@
+import { styled } from "@/styles";
+
+const Button = styled('button', {
+  backgroundColor: '$rocketseat',
+  fontFamily: 'Roboto, sans-serif',
+  borderRadius: '4px',
+  border: 0,
+  padding: '8px 16px',
+})
+
 export default function Home() {
   return (
     <div>
-      <h1 className="text-4xl font-bold">Hello World</h1>
+      <Button>Click me</Button>
     </div>
   );
 }
