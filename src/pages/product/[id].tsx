@@ -24,12 +24,12 @@ export default function Product({ product }: ProductProps) {
     useState(false)
   async function handleBuyProduct() {
     try {
+      setIsCreatingCheckoutSession(true)
       const response = await axios.post('/api/checkout', {
         priceId: product.defaultPriceId,
       })
 
       const { checkoutUrl } = response.data
-
       window.location.href = checkoutUrl
     } catch (error) {
       setIsCreatingCheckoutSession(false)
